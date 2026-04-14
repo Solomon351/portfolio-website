@@ -11,10 +11,11 @@
 </head>
 <body>
 
-    <!-- Navigations -->
+    <!-- Navigations bars -->
     <header>
         <nav>
             <div class="logo">
+                <!-- Logo -->
                 <span>S</span>
                 <span>PabTech</span>
             </div>
@@ -23,19 +24,20 @@
                 <li><a href="#">About</a></li>
                 <li><a href="#">Skills</a></li>
                 <li><a href="#">Projects</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
 
             <div class="mobile">
                 <i class="fa-solid fa-bars"></i>
                 <ul class="mobile-nav">
                     <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
+                    <li><a href="#about">About</a></li>
                     <li><a href="#">Skills</a></li>
                     <li><a href="#">Projects</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
+            <!-- Search bar -->
             <div class="search">
                 <label for="search">Search</label>
                 <input type="search" value="" id="search">
@@ -44,6 +46,7 @@
         </nav>
     </header>
 
+    <!-- The Hero Section -->
     <main>
         <section class="hero">
             <h1>Ugwuibe Solomon</h1>
@@ -94,7 +97,89 @@
 
         <section class="project">
             <h2>My Projects</h2>
+            <div class="project-container">
+
+                <!-- project 1 -->
+                 <div class="project-1">
+                    <img src="./images/project-1.png" alt="A hinge website" title="A chatting website " loading="lazy" width="500px">
+                    <div class="project-1-info">
+                        <h3>Hinge websites</h3>
+                        <p>Recreating a hinge web that is mearnt for connecting with friends and family</p>
+                        <p><Strong>Tech:</Strong> HTML and CSS</p>
+                    </div>
+                 </div>
+
+                 <!-- project 2 -->
+                  <div class="project-2">
+                    <img src="./images/project-2.png" alt="A designed ATM card" title="Access Bank design ATM" loading="lazy" width="500px">
+                    <div class="project-2-info">
+                        <h3>Designed ATM</h3>
+                        <p>An well designed ATM card that,that explains how flexbox really work.</p>
+                        <p><strong>Tech:</strong> HTML and CSS</p>
+                    </div>
+                  </div>
+
+                  <!-- project 3 -->
+                   <div class="project-3">
+                    <img src="" alt="Portfolio website" title="Website that well describe me" loading="lazy" width="500px">
+                    <div class="project-3-info">
+                        <h3>Portfolio Website</h3>
+                        <p>A personal website that showcase my skills and projects.</p>
+                        <p><strong>Tech:</strong> HTML and CSS</p>
+                    </div>
+                   </div>
+            </div>
+        </section>
+
+        <section class="contact">
+            <div class="contact-intro">
+                <h2>My Contact</h2>
+                <p>If you have any questions, want to collaborate, or just want to say hello, feel free to reach out!</p>
+            </div>
+            <div class="contact-container">
+                <form class="contact-form">
+                    <div class="name">
+                        <label for="fullname">Fullname:</label>
+                        <input type="text" name="fullname" id="fullname" placeholder="Enter Your Fullname">
+                    </div>
+                    <div class="email">
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email" placeholder="me@example.com">
+                    </div>
+                    <div class="comment">
+                        <label for="comment">Message:</label>
+                        <textarea name="comment" id="comment"></textarea>
+                    </div>
+                    <button type="submit">
+                        Submit
+                    </button>
+                </form>
+
+                <div class="contact-info">
+                    <h3>Connect with me</h3>
+                    <a href="tel:+2348167358425">+2348167358425</a>
+                    <a href="mailto:ugwuibesolomon@gmail.com">ugwuibesolomon@gmail.com</a>
+
+                    <!-- My profiles link -->
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/solomon-ugwuibe-0077943a9/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BBkAWHf1WR66sEOg0MxQ9YQ%3D%3D" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i>Linkedin</a>
+                        <a href="https://github.com/Solomon351" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i>Github</a>
+                        <a href="https://www.facebook.com/share/1GVvbtEpbX/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook"></i>Facebook</a>
+                        <a href="https://x.com/s_ugwuibe" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-square-twitter"></i>Twitter</a>
+                        <a href="https://www.tiktok.com/@ugwuibe_" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-tiktok"></i>Tiktok</a>
+                    </div>
+                </div>
+            </div>
+            
         </section>
     </main>
+
+    <!-- The Footer -->
+     <footer>
+        <p>
+            &copy; 2026 Ugwuibe Solomon. All right reserved
+        </p>
+        
+     </footer>
 </body>
 </html>
