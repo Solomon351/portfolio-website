@@ -26,12 +26,18 @@ a:hover{
     transform: scale(1);
 }
 
+body{
+    background-color: black;
+    color: rgb(255, 255, 255, 0.9);
+}
+
 /* nav/header */
 header{
     width: 100%;
     height: 5rem;
-    background-color: black;
-    border-bottom: 2px solid gold;
+    
+    background-color: rgb(0, 0, 0, 0.9);
+    border-bottom: 1px solid rgb(255, 215, 0, 0.4);
     color: white;
     position: sticky;
     top: 0;
@@ -39,8 +45,9 @@ header{
 }
 
 header nav{
-    width: 100%;
+    width: 95%;
     height: 100%;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -76,21 +83,26 @@ header nav .logo{
     position: absolute;
     right: 0;
     top: 100%;
-    background-color: black;
-    border-top: 1px solid black;
-    border-left: 2px solid gold;
-    border-bottom:2px solid gold ;
+    background-color: rgb(0, 0, 0, 0.7);
+    border-top: 2px solid black;
+    border-left: 1px solid rgb(255, 215, 0, 0.3);
+    border-bottom:1px solid rgb(255, 215, 0, 0.3) ;
     padding: 2rem 3rem;
     width: 60%;
     max-width: 8rem;
-    height: calc(70vh - 6.5rem);
-    display: flex;
+    height: calc(60vh - 6.5rem);
+    display: none;
     flex-direction: column;
     gap: 1rem;
 
 }
+/* .mobile .mobile-nav > li:hover{
+    display: flex;
+} */
+
 .mobile i{
     color: gold;
+    background-color: #5c5345;
     font-size: 1.7rem;
 }
 /* header .search{
@@ -108,26 +120,51 @@ header nav .logo{
 .hero{
     width: 100%;
     min-height: calc(100vh - 5rem);
-    background-image: url(../images/CYVT3563.JPG);
+    background-image: url(../images/167586.jpg);
     background-size: cover;
     background-position: center;
     position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 0.5rem;
+    justify-content: flex-end;
+    align-items: start;
+    gap: 1rem;
+    right: 0;
     color: rgb(255, 215, 0);
+    
 }
+.hero-text-h2,
+.hero h1 {
+    z-index: 5;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    width: 90%;
+    
 
+}
 .hero h1{
     color:#f1f1f1;
     font-size: 2.5rem;
+    z-index: 5;
+    
 }
+
 .hero p{
-    color: black;
+    color: gold;
     font-weight: 800;
     font-size: 1.3rem;
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+}
+.hero a{
+    background-color: #5c5345;
+    padding: 1rem 2rem;
+    border-radius: 1.5rem;
+    z-index: 5;
+    margin-bottom: 2rem;
+}
+.hero a:hover{
+    color: gold;
 }
 
 .overlay{
@@ -136,6 +173,73 @@ header nav .logo{
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: rgb(0, 0, 0, 0.5);
+    background-color: rgb(0, 0, 0, 0.6);
 }
 
+
+/* The About Section */
+#about{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1fr);
+    align-items: center;
+    line-height: 2;
+    gap: 2rem;
+}
+
+.about-paragraph{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    width: 90%;
+    text-align: center;
+    gap: 1rem; 
+    border-top: 2px solid #daa520;  
+    padding: 1rem; 
+}
+.about-paragraph h2{
+    font-size: 2.5rem;
+    color: gold;
+    margin: 2rem 0;
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+.about-paragraph p{
+    font-size: 0.9rem;
+}
+
+#about img{
+    margin: 0 auto;
+    width: 90%;
+    min-height: calc(100vh-5rem);
+}
+
+
+
+/* media querry */
+@media (min-width: 768px){
+    /* header */
+
+    .mobile {
+        display: none;
+    }
+/* 
+    header .desktop-nav,
+    header nav > a{
+        display: block;
+    } */
+    header nav .desktop-nav{
+        display: flex;
+        gap: 2rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header nav{
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+}
