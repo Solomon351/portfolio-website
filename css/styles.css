@@ -497,6 +497,10 @@ form input{
     display: inline-block;
     /* align-self: stretch; */
 }
+
+/* .social-link a i{
+    color: ;
+} */
 /* Footer */
 footer{
     height: 100%;
