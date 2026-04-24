@@ -22,7 +22,8 @@ a{
     display: inline-block;
     text-decoration: none;
     color: #f1f1f1;
-    font-weight: 700;
+    font-weight: 500;
+    font-size: 1rem;
     transition: all 0.5s ease-in-out;
 }
 a:hover{
@@ -92,6 +93,7 @@ header nav .logo{
     position: relative;
     display: flex;
     
+    
 }
 
 .mobile-nav{
@@ -102,7 +104,6 @@ header nav .logo{
     border-top: 2px solid black;
     border-bottom:1px solid rgb(255, 215, 0, 0.3) ;
     padding: 2rem 3rem;
-    /* width: 100%; */
     max-width: 20rem;
     height: calc(60vh - 6.5rem);
     display: flex;
@@ -159,6 +160,7 @@ header nav .logo{
 }
 .hero-text-h2,
 .hero h1 {
+
     z-index: 5;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     
@@ -167,7 +169,7 @@ header nav .logo{
 }
 .hero h1{
     color:#f1f1f1;
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     z-index: 5;
     
 }
@@ -175,7 +177,6 @@ header nav .logo{
 .hero p{
     color: gold;
     font-weight: 800;
-    font-size: 1.3rem;
     z-index: 5;
     display: flex;
     justify-content: center;
@@ -230,7 +231,7 @@ header nav .logo{
 #about h2{
     width: 90%;
     margin: 0 auto;
-    font-size: 2.5rem;
+    font-size: 2rem;
     display: flex;
     justify-content: center;
     color: gold;
@@ -286,7 +287,7 @@ header nav .logo{
 }
 .skills-intro h2{
     color: #ffd700;
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 800;
     
 }
@@ -349,7 +350,7 @@ header nav .logo{
     margin-top: 2rem;
     
     color: #ffd700;
-    font-size: 2.5rem;
+    font-size: 2rem;
 }
 .project-container{
     width: 100%;
@@ -391,9 +392,9 @@ header nav .logo{
 }
 .project-container h3{
     padding: 0.5rem;
+    font-size: 1.6rem;
 }
 .project-container p{
-    font-size: 1.2rem;
     line-height: 2;
     font-weight: 600;
     letter-spacing: 1px;
@@ -430,11 +431,10 @@ header nav .logo{
     gap: 1rem;
 }
 .contact-intro h2{
-    font-size: 2.5rem;
+    font-size: 2rem;
     color: #ffd700;
 }
 .contact-intro p{
-    font-size: 1rem;
     letter-spacing: 1px;
     text-align: center;
     line-height: 2;
@@ -510,21 +510,19 @@ form input{
    
 }
 .contact-info h3{
-    color: #ffd700;
+    color: #0000ff;
     font-size: 1.5rem;
 }
-
-/* social links */
-.social-link a{
-    font-size: 1.3rem;
+.contact-info a{
     display: inline-block;
-    
-    
+    /* font-size: 2rem; */
+}
+.social-link{
+    margin: 0 auto;
+    display: flex;
+    /* gap: 0.5rem; */
 }
 
-/* .social-link a i{
-    color: ;
-} */
 /* Footer */
 footer{
     height: 100%;
@@ -539,10 +537,11 @@ footer{
     justify-content: center;
 }
 footer p{
-    color: #f1f1f1;
-    font-size: 0.9rem;
+    color: #bbb;
+    font-size: 1rem;
     z-index: 5;
-    font-weight: 700;
+    opacity: 0.7;
+    
 }
 .footer-overlay{
     position: absolute;
@@ -558,15 +557,10 @@ footer p{
 
 /* media querry */
 @media (min-width: 768px){
-    /* header */
 
-    .mobile {
-        display: none;
-    }
 
-    header nav .desktop-nav{
-        display: flex;
-    }
+    /*The header Section */
+
     .desktop-nav a{
         transition: transform 0.6s ease-in-out;
     }
@@ -581,8 +575,15 @@ footer p{
 
     /* Hero section */
     .hero{
+        padding: 0 3rem;
         min-height: 90vh;
         /* padding:0 3rem; */
+    }
+    .hero h1{
+        font-size: 2.8rem;
+    }
+    .hero a{
+        font-size: 1rem;
     }
 
     /* About section */
@@ -601,6 +602,9 @@ footer p{
     
 
     /* Skills section */
+    #skills h2{
+        font-size: 2.8rem;
+    }
     .skills-content{
         grid-template-columns: repeat(3,1fr);
         /* grid-template-columns: auto; */
@@ -613,6 +617,9 @@ footer p{
 }
 
     /* project section */
+    #project h2{
+        font-size: 2.8rem;
+    }
     .project-container{
         width: 90%;
         grid-template-columns: repeat(2,1fr);
@@ -623,6 +630,9 @@ footer p{
     }
 
     /* Contact section */
+    #contact h2{
+        font-size: 2.8rem;
+    }
     .contact-container{
         width: 90%;
         display: grid;
@@ -634,5 +644,26 @@ footer p{
     form input::placeholder{
         font-size:1.1rem ;
         color: #5c5345;
+    }
+    .contact-info > a:nth-child(2){
+        
+        font-size: 1.3rem;
+    }
+    .contact-info > a:nth-child(3){
+        font-size: 1.3rem;
+    }
+    .contact-info h3{
+    font-size: 1.7rem;
+
+    }
+
+}
+@media (min-width: 1024px){
+    .mobile{
+        display: none;
+    }
+
+    header nav .desktop-nav{
+        display: flex;
     }
 }

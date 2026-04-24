@@ -1,0 +1,24 @@
+SEMANTIC TAGS USED: ( Header, Nav, Main, Section, Article, Footer)
+
+FONT SIZES For mobile:{
+P { 1.1rem }
+h1 {1.5rem}
+h2 {2rem}
+h3  {1.5rem}
+a {1rem}
+}
+
+
+For Tablet/ Desktop
+p { 20px}
+h1 {2.8rem}
+h2 {2.8rem}
+h3 {1.7rem}
+
+
+COLOR :
+p {rgb(255, 255, 255, 0.9);}
+h1 {#f1f1f1;}
+h2 {#ffd700;}
+h3 {#0000ff;}
+a {#f1f1f1;}
