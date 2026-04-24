@@ -12,18 +12,23 @@ ul li {
     list-style: none;
 }
 
+p{
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+}
+
 /* All anchor Tag */
 a{
     display: inline-block;
     text-decoration: none;
-    color: #960018;
+    color: #f1f1f1;
     font-weight: 700;
     transition: all 0.5s ease-in-out;
 }
 a:hover{
     color: gold;
     text-decoration: underline;
-    transform: scale(1);
+    
 }
 
 body{
@@ -47,7 +52,7 @@ header{
 }
 
 header nav{
-    width: 90%;
+    width: 100%;
     height: 100%;
     margin: 0 auto;
     display: flex;
@@ -84,28 +89,51 @@ header nav .logo{
     font-size: 1.3rem;
 }
 
-.mobile .mobile-nav{
+.mobile{
+    position: relative;
+    display: flex;
+    
+}
+
+.mobile-nav{
     position: absolute;
     right: 0;
     top: 100%;
     background-color: rgb(0, 0, 0, 0.7);
     border-top: 2px solid black;
-    border-left: 1px solid rgb(255, 215, 0, 0.3);
     border-bottom:1px solid rgb(255, 215, 0, 0.3) ;
     padding: 2rem 3rem;
-    width: 60%;
-    max-width: 8rem;
+    /* width: 100%; */
+    max-width: 20rem;
     height: calc(60vh - 6.5rem);
-    display: none;
+    display: flex;
     flex-direction: column;
     gap: 1rem;
 
 }
-/* .mobile .mobile-nav > li:hover{
+.mobile-nav{
+    display: none;
+}
+.mobile:hover .mobile-nav{
     display: flex;
-} */
+}
+
+.mobile-nav a{
+    display: inline-block;
+    font-size: 1.1rem;
+    color: #f1f1f1;
+    transition: all 0.5s ease-in-out;
+}
+.mobile-nav a:hover{
+    color: #ffd700;
+    transform: translateX(5px);
+}
 
 .mobile i{
+    
+    border: none;
+    outline: none;
+    box-shadow: none;
     color: gold;
     background-color: #5c5345;
     font-size: 1.7rem;
@@ -132,7 +160,7 @@ header nav .logo{
     position: relative;
     display: flex;
     flex-direction: column;
-    padding:0 2rem;
+    padding:0 1rem;
     justify-content: flex-end;
     align-items: start;
     gap: 1rem;
@@ -144,7 +172,7 @@ header nav .logo{
 .hero h1 {
     z-index: 5;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    width: 90%;
+    
     
 
 }
@@ -223,7 +251,7 @@ header nav .logo{
 }
 
 .about-paragraph p{
-    font-size: 0.9rem;
+    font-size: 1.1rem;
     letter-spacing: 1px;
 }
 
@@ -277,6 +305,7 @@ header nav .logo{
     letter-spacing: 1px;
     text-align: center;
     line-height: 2;
+    font-size: 1.1rem;
 }
 
 .skills-content{
@@ -493,13 +522,15 @@ form input{
 }
 .contact-info h3{
     color: #ffd700;
+    font-size: 1.5rem;
 }
 
 /* social links */
 .social-link a{
     font-size: 1.3rem;
     display: inline-block;
-    /* align-self: stretch; */
+    
+    
 }
 
 /* .social-link a i{
@@ -520,7 +551,7 @@ footer{
 }
 footer p{
     color: #f1f1f1;
-    font-size: 1.2rem;
+    font-size: 0.9rem;
     z-index: 5;
     font-weight: 700;
 }
@@ -556,8 +587,15 @@ footer p{
     header nav .desktop-nav{
         display: flex;
     }
+    .desktop-nav a{
+        transition: transform 0.6s ease-in-out;
+    }
+    .desktop-nav a:hover{
+        transform: translateX(5px);
+    }
 
     header nav{
+        width: 90%;
         font-size: 1.3rem;
     }
 
