@@ -28,7 +28,6 @@ a{
 a:hover{
     color: gold;
     text-decoration: underline;
-    
 }
 
 body{
@@ -138,16 +137,6 @@ header nav .logo{
     background-color: #5c5345;
     font-size: 1.7rem;
 }
-/* header .search{
-    position: relative;
-    background-color: black;
-    display: flex;
-    padding: 1rem;
-    color: gold;
-    width: calc(100% - 8rem);
-    justify-content: center;
-
-} */
 
 /* Hero Section */
 .hero{
@@ -565,15 +554,6 @@ footer p{
     background-color: rgb(0, 0, 0, 0.6);
     
 }
-
-/* .project-1 img{
-     margin: 0 auto;
-    width: 90%;
-    
-    min-height: calc(100vh-5rem);
-} */
-
-
 
 
 /* media querry */
