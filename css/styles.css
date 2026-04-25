@@ -174,6 +174,7 @@ header nav .logo{
     
 }
 
+
 .hero p{
     color: gold;
     font-weight: 800;
@@ -354,6 +355,7 @@ header nav .logo{
 }
 .project-container{
     width: 100%;
+    height: 100%;
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(1fr);
@@ -365,6 +367,7 @@ header nav .logo{
     margin: 0 auto;
     background-color:rgb(128, 128, 128, 0.5) ;
     color: #ffd700;
+    padding: 1rem;
     border-radius: 9px;
     text-align: center;
     position: relative;
@@ -406,8 +409,11 @@ header nav .logo{
 }
 .project-container span{
     font-size: 1.6rem;
+    padding: 0.5rem;
+    border-radius: 10px;
+    background-color: #5c5345;
     font-weight: 900;
-    color: black;
+    color: #f1f1f1;
     transition: all 0.4s ease-in-out;
 }
 
