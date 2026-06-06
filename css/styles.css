@@ -90,6 +90,7 @@ header nav .logo{
 }
 
 .mobile{
+    
     position: relative;
     display: flex;
     
@@ -256,7 +257,7 @@ header nav .logo{
 
 .about-content img{
     border-top: 1px solid rgb(218, 165, 32, 0.5);
-    border-radius: 50%;
+    border-radius: 100%;
     margin: 0 auto;
     object-fit: cover;
     width: 100%;
@@ -310,7 +311,7 @@ header nav .logo{
     row-gap: 0.5rem;
 }
 .skills-content article{
-    width: 80%;
+    width: 90%;
     margin:0 auto;
     max-width: 1000px;
     padding: 2rem 4rem;
